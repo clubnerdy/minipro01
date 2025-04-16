@@ -13,11 +13,46 @@
   <body>
     <!-- 채용공고 리스트 -->
 
-    <header></header>
+    <nav class="navbar navbar-expand bg-white border-bottom fixed-top">
+      <div
+        class="container d-flex justify-content-between align-items-center"
+        style="max-width: 60%"
+      >
+        <!-- Left: 로고 + 메뉴 -->
+        <div class="d-flex align-items-center gap-4">
+          <a class="navbar-brand text-primary fw-bold" href="#">WWY</a>
+          <ul class="navbar-nav flex-row gap-3">
+            <li class="nav-item">
+              <a class="nav-link text-dark fw-semibold" href="#">채용</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-dark fw-semibold" href="#">이력서</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-dark fw-semibold" href="#">커뮤니티</a>
+            </li>
+          </ul>
+        </div>
+
+        <ul class="navbar-nav d-flex flex-row gap-2">
+          <li class="nav-item">
+            <a class="btn btn-outline-primary btn-sm" href="#"
+              >회원가입/로그인</a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="btn btn-secondary btn-sm" href="#">마이페이지</a>
+          </li>
+          <li class="nav-item">
+            <a class="btn btn-danger btn-sm" href="#">로그아웃</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
 
     <main>
       <section>
-        <div class="inner py-4 d-flex flex-column">
+        <div class="container mt-4 mb-5 py-4 d-flex flex-column gap-1">
           <div class="filter-wrap">
             <form action="" method="GET">
               <div
@@ -111,33 +146,41 @@
           </div>
           <!-- .filter-wrap end -->
           <div class="job-list">
-            <ul class="card-wrap">
-              <li class="card-1 d-flex flex-column">
-                <figure class="recommend-img">
-                  <img src="img/image00.png" alt="임시이미지" />
+            <ul class="card-wrap row">
+              <li class="card-1 col-3 d-flex flex-column gap-2">
+                <figure
+                  class="recommend-img overflow-hidden d-flex align-items-center border rounded"
+                >
+                  <img class="w-100" src="img/image00.png" alt="임시이미지" />
                 </figure>
-                <div class="recommend-content d-flex flex-column">
+                <div
+                  class="recommend-content d-flex flex-column border rounded gap-3 py-3 px-3"
+                >
                   <div class="top d-flex justify-content-between">
-                    <h3 class="fs-6">채용공고명</h3>
+                    <h3 class="fs-6 fw-medium">채용공고명</h3>
                     <div class="toggle-btn"></div>
                     <!-- .toggle-btn end -->
                   </div>
                   <!-- .top end -->
-                  <div class="bottom d-flex flex-column">
-                    <p>회사명</p>
-                    <ul class="d-flex justify-content-start">
-                      <li>
+                  <div class="bottom d-flex flex-column gap-3">
+                    <p class="fs-6">회사명</p>
+                    <ul class="d-flex justify-content-start gap-4">
+                      <li class="d-flex align-items-center gap-1">
                         <img src="img/icon00.png" alt="임시아이콘" />
-                        <p>경력</p>
+                        <p class="fs-6">경력</p>
                       </li>
-                      <li>
+                      <li class="d-flex align-items-center gap-1">
                         <img src="img/icon00.png" alt="임시아이콘" />
-                        <p>서울특별시 마포구</p>
+                        <p class="fs-6">서울특별시 마포구</p>
                       </li>
                     </ul>
-                    <ul class="duty d-flex justify-content-start">
-                      <li><p>서버/백엔드</p></li>
-                      <li><p>서버/백엔드</p></li>
+                    <ul class="duty d-flex justify-content-start gap-1">
+                      <li class="p-2 rounded">
+                        <p class="fs-6 fw-medium">서버/백엔드</p>
+                      </li>
+                      <li class="p-2 rounded">
+                        <p class="fs-6 fw-medium">서버/백엔드</p>
+                      </li>
                     </ul>
                   </div>
                   <!-- .bottom end -->
@@ -145,32 +188,40 @@
                 <!-- .recommend-content end -->
               </li>
               <!-- .card-1 end -->
-              <li class="card-1 d-flex flex-column">
-                <figure class="recommend-img">
-                  <img src="img/image00.png" alt="임시이미지" />
+              <li class="card-1 col-3 d-flex flex-column gap-2">
+                <figure
+                  class="recommend-img overflow-hidden d-flex align-items-center border rounded"
+                >
+                  <img class="w-100" src="img/image00.png" alt="임시이미지" />
                 </figure>
-                <div class="recommend-content d-flex flex-column">
+                <div
+                  class="recommend-content d-flex flex-column border rounded gap-3 py-3 px-3"
+                >
                   <div class="top d-flex justify-content-between">
-                    <h3 class="fs-6">채용공고명</h3>
+                    <h3 class="fs-6 fw-medium">채용공고명</h3>
                     <div class="toggle-btn"></div>
                     <!-- .toggle-btn end -->
                   </div>
                   <!-- .top end -->
-                  <div class="bottom d-flex flex-column">
-                    <p>회사명</p>
-                    <ul class="d-flex justify-content-start">
-                      <li>
+                  <div class="bottom d-flex flex-column gap-3">
+                    <p class="fs-6">회사명</p>
+                    <ul class="d-flex justify-content-start gap-4">
+                      <li class="d-flex align-items-center gap-1">
                         <img src="img/icon00.png" alt="임시아이콘" />
-                        <p>경력</p>
+                        <p class="fs-6">경력</p>
                       </li>
-                      <li>
+                      <li class="d-flex align-items-center gap-1">
                         <img src="img/icon00.png" alt="임시아이콘" />
-                        <p>서울특별시 마포구</p>
+                        <p class="fs-6">서울특별시 마포구</p>
                       </li>
                     </ul>
-                    <ul class="duty d-flex justify-content-start">
-                      <li><p>서버/백엔드</p></li>
-                      <li><p>서버/백엔드</p></li>
+                    <ul class="duty d-flex justify-content-start gap-1">
+                      <li class="p-2 rounded">
+                        <p class="fs-6 fw-medium">서버/백엔드</p>
+                      </li>
+                      <li class="p-2 rounded">
+                        <p class="fs-6 fw-medium">서버/백엔드</p>
+                      </li>
                     </ul>
                   </div>
                   <!-- .bottom end -->
@@ -178,32 +229,40 @@
                 <!-- .recommend-content end -->
               </li>
               <!-- .card-1 end -->
-              <li class="card-1 d-flex flex-column">
-                <figure class="recommend-img">
-                  <img src="img/image00.png" alt="임시이미지" />
+              <li class="card-1 col-3 d-flex flex-column gap-2">
+                <figure
+                  class="recommend-img overflow-hidden d-flex align-items-center border rounded"
+                >
+                  <img class="w-100" src="img/image00.png" alt="임시이미지" />
                 </figure>
-                <div class="recommend-content d-flex flex-column">
+                <div
+                  class="recommend-content d-flex flex-column border rounded gap-3 py-3 px-3"
+                >
                   <div class="top d-flex justify-content-between">
-                    <h3 class="fs-6">채용공고명</h3>
+                    <h3 class="fs-6 fw-medium">채용공고명</h3>
                     <div class="toggle-btn"></div>
                     <!-- .toggle-btn end -->
                   </div>
                   <!-- .top end -->
-                  <div class="bottom d-flex flex-column">
-                    <p>회사명</p>
-                    <ul class="d-flex justify-content-start">
-                      <li>
+                  <div class="bottom d-flex flex-column gap-3">
+                    <p class="fs-6">회사명</p>
+                    <ul class="d-flex justify-content-start gap-4">
+                      <li class="d-flex align-items-center gap-1">
                         <img src="img/icon00.png" alt="임시아이콘" />
-                        <p>경력</p>
+                        <p class="fs-6">경력</p>
                       </li>
-                      <li>
+                      <li class="d-flex align-items-center gap-1">
                         <img src="img/icon00.png" alt="임시아이콘" />
-                        <p>서울특별시 마포구</p>
+                        <p class="fs-6">서울특별시 마포구</p>
                       </li>
                     </ul>
-                    <ul class="duty d-flex justify-content-start">
-                      <li><p>서버/백엔드</p></li>
-                      <li><p>서버/백엔드</p></li>
+                    <ul class="duty d-flex justify-content-start gap-1">
+                      <li class="p-2 rounded">
+                        <p class="fs-6 fw-medium">서버/백엔드</p>
+                      </li>
+                      <li class="p-2 rounded">
+                        <p class="fs-6 fw-medium">서버/백엔드</p>
+                      </li>
                     </ul>
                   </div>
                   <!-- .bottom end -->
@@ -211,131 +270,40 @@
                 <!-- .recommend-content end -->
               </li>
               <!-- .card-1 end -->
-              <li class="card-1 d-flex flex-column">
-                <figure class="recommend-img">
-                  <img src="img/image00.png" alt="임시이미지" />
+              <li class="card-1 col-3 d-flex flex-column gap-2">
+                <figure
+                  class="recommend-img overflow-hidden d-flex align-items-center border rounded"
+                >
+                  <img class="w-100" src="img/image00.png" alt="임시이미지" />
                 </figure>
-                <div class="recommend-content d-flex flex-column">
+                <div
+                  class="recommend-content d-flex flex-column border rounded gap-3 py-3 px-3"
+                >
                   <div class="top d-flex justify-content-between">
-                    <h3 class="fs-6">채용공고명</h3>
+                    <h3 class="fs-6 fw-medium">채용공고명</h3>
                     <div class="toggle-btn"></div>
                     <!-- .toggle-btn end -->
                   </div>
                   <!-- .top end -->
-                  <div class="bottom d-flex flex-column">
-                    <p>회사명</p>
-                    <ul class="d-flex justify-content-start">
-                      <li>
+                  <div class="bottom d-flex flex-column gap-3">
+                    <p class="fs-6">회사명</p>
+                    <ul class="d-flex justify-content-start gap-4">
+                      <li class="d-flex align-items-center gap-1">
                         <img src="img/icon00.png" alt="임시아이콘" />
-                        <p>경력</p>
+                        <p class="fs-6">경력</p>
                       </li>
-                      <li>
+                      <li class="d-flex align-items-center gap-1">
                         <img src="img/icon00.png" alt="임시아이콘" />
-                        <p>서울특별시 마포구</p>
-                      </li>
-                    </ul>
-                    <ul class="duty d-flex justify-content-start">
-                      <li><p>서버/백엔드</p></li>
-                      <li><p>서버/백엔드</p></li>
-                    </ul>
-                  </div>
-                  <!-- .bottom end -->
-                </div>
-                <!-- .recommend-content end -->
-              </li>
-              <!-- .card-1 end -->
-              <li class="card-1 d-flex flex-column">
-                <figure class="recommend-img">
-                  <img src="img/image00.png" alt="임시이미지" />
-                </figure>
-                <div class="recommend-content d-flex flex-column">
-                  <div class="top d-flex justify-content-between">
-                    <h3 class="fs-6">채용공고명</h3>
-                    <div class="toggle-btn"></div>
-                    <!-- .toggle-btn end -->
-                  </div>
-                  <!-- .top end -->
-                  <div class="bottom d-flex flex-column">
-                    <p>회사명</p>
-                    <ul class="d-flex justify-content-start">
-                      <li>
-                        <img src="img/icon00.png" alt="임시아이콘" />
-                        <p>경력</p>
-                      </li>
-                      <li>
-                        <img src="img/icon00.png" alt="임시아이콘" />
-                        <p>서울특별시 마포구</p>
+                        <p class="fs-6">서울특별시 마포구</p>
                       </li>
                     </ul>
-                    <ul class="duty d-flex justify-content-start">
-                      <li><p>서버/백엔드</p></li>
-                      <li><p>서버/백엔드</p></li>
-                    </ul>
-                  </div>
-                  <!-- .bottom end -->
-                </div>
-                <!-- .recommend-content end -->
-              </li>
-              <!-- .card-1 end -->
-              <li class="card-1 d-flex flex-column">
-                <figure class="recommend-img">
-                  <img src="img/image00.png" alt="임시이미지" />
-                </figure>
-                <div class="recommend-content d-flex flex-column">
-                  <div class="top d-flex justify-content-between">
-                    <h3 class="fs-6">채용공고명</h3>
-                    <div class="toggle-btn"></div>
-                    <!-- .toggle-btn end -->
-                  </div>
-                  <!-- .top end -->
-                  <div class="bottom d-flex flex-column">
-                    <p>회사명</p>
-                    <ul class="d-flex justify-content-start">
-                      <li>
-                        <img src="img/icon00.png" alt="임시아이콘" />
-                        <p>경력</p>
+                    <ul class="duty d-flex justify-content-start gap-1">
+                      <li class="p-2 rounded">
+                        <p class="fs-6 fw-medium">서버/백엔드</p>
                       </li>
-                      <li>
-                        <img src="img/icon00.png" alt="임시아이콘" />
-                        <p>서울특별시 마포구</p>
+                      <li class="p-2 rounded">
+                        <p class="fs-6 fw-medium">서버/백엔드</p>
                       </li>
-                    </ul>
-                    <ul class="duty d-flex justify-content-start">
-                      <li><p>서버/백엔드</p></li>
-                      <li><p>서버/백엔드</p></li>
-                    </ul>
-                  </div>
-                  <!-- .bottom end -->
-                </div>
-                <!-- .recommend-content end -->
-              </li>
-              <!-- .card-1 end -->
-              <li class="card-1 d-flex flex-column">
-                <figure class="recommend-img">
-                  <img src="img/image00.png" alt="임시이미지" />
-                </figure>
-                <div class="recommend-content d-flex flex-column">
-                  <div class="top d-flex justify-content-between">
-                    <h3 class="fs-6">채용공고명</h3>
-                    <div class="toggle-btn"></div>
-                    <!-- .toggle-btn end -->
-                  </div>
-                  <!-- .top end -->
-                  <div class="bottom d-flex flex-column">
-                    <p>회사명</p>
-                    <ul class="d-flex justify-content-start">
-                      <li>
-                        <img src="img/icon00.png" alt="임시아이콘" />
-                        <p>경력</p>
-                      </li>
-                      <li>
-                        <img src="img/icon00.png" alt="임시아이콘" />
-                        <p>서울특별시 마포구</p>
-                      </li>
-                    </ul>
-                    <ul class="duty d-flex justify-content-start">
-                      <li><p>서버/백엔드</p></li>
-                      <li><p>서버/백엔드</p></li>
                     </ul>
                   </div>
                   <!-- .bottom end -->
@@ -365,6 +333,13 @@
       </section>
     </main>
 
-    <footer></footer>
+    <footer class="bg-white py-5 border-top">
+      <div class="container text-center" style="max-width: 60%">
+        <h4>Copyright 2025. WWY All rights reserved.</h4>
+        <h5>📧 a32176740@gmail.com</h5>
+        <div>그린컴퓨터아카데미 부산</div>
+        <div>Made By KDTC3-G3</div>
+      </div>
+    </footer>
   </body>
 </html>

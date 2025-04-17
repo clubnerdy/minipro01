@@ -9,6 +9,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="style/job-detail.css" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
   </head>
   <body>
     <!-- 채용공고 상세보기 -->
@@ -184,7 +185,48 @@
           </div>
 
           <!-- .doc-wrap end -->
-          <aside class="apply-wrap border rounded"></aside>
+          <aside class="apply-wrap border rounded p-5 d-flex flex-column gap-3">
+            <div class="logo-wrap">
+              <figure><img src="img/icon00.png" alt="" /></figure>
+            </div>
+            <ul class="info-wrap">
+              <li class="fs-4 fw-bold">채용공고 제목</li>
+              <li>회사명</li>
+            </ul>
+            <div class="select-wrap d-flex flex-column gap-2">
+              <div class="dropdown w-100">
+                <button
+                  type="button"
+                  class="btn btn-outline-primary dropdown-toggle w-100"
+                  data-bs-toggle="dropdown"
+                >
+                  지원분야
+                </button>
+                <ul class="dropdown-menu w-100">
+                  <li><a class="dropdown-item" href="#">리스트1</a></li>
+                  <li><a class="dropdown-item" href="#">리스트2</a></li>
+                </ul>
+              </div>
+              <div class="dropdown">
+                <button
+                  type="button"
+                  class="btn btn-outline-primary dropdown-toggle w-100"
+                  data-bs-toggle="dropdown"
+                >
+                  이력서 선택
+                </button>
+                <ul class="dropdown-menu w-100">
+                  <li><a class="dropdown-item" href="#">이력서1</a></li>
+                  <li><a class="dropdown-item" href="#">이력서2</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="btn-wrap w-100">
+              <button type="button" class="btn btn-primary w-100">
+                지원하기
+              </button>
+            </div>
+          </aside>
           <!-- .apply-wrap end -->
         </div>
         <!-- .inner end -->

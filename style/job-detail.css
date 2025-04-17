@@ -47,7 +47,7 @@ body {
 }
 
 .doc-info2 h4 {
-    width: 160px;
+    width: 140px;
     color: #999;
 }
 
@@ -63,7 +63,7 @@ body {
 /* .apply-wrap */
 .apply-wrap {
     width: calc(32% - 8px);
-    height: 400px;
+    height: 430px;
     position: sticky;
     top: 100px;
 }
